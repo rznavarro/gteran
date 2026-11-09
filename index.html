@@ -7,133 +7,316 @@
 <meta name="description" content="Guillermo Teran, Broker Associate at Avanti Way Realty. New developments and pre-construction in Brickell, Edgewater, Coral Gables, Doral and across Miami-Dade.">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#06172a">
+<script>document.documentElement.className+=' js'</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Guillermo Teran","jobTitle":"Broker Associate","telephone":"+1-305-457-9609","email":"gteran@avantiway.com","url":"https://www.gteran.com/","parentOrganization":{"@type":"Organization","name":"Avanti Way Realty"},"areaServed":["Brickell","Edgewater","Coral Gables","Biscayne Park","Doral","Downtown Miami","El Portal","Pinecrest"]}
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Guillermo Teran","jobTitle":"Broker Associate","telephone":"+1-305-457-9609","email":"gteran@avantiway.com","url":"https://www.gteran.com/","parentOrganization":{"@type":"Organization","name":"Avanti Way Realty"},"areaServed":["Brickell","Edgewater","Coral Gables","Biscayne Park","Doral","Downtown Miami","El Portal","Pinecrest"],"sameAs":["https://www.instagram.com/gteran69/","https://www.facebook.com/gteran69","https://www.linkedin.com/in/guillermo-teran-9484979b/"]}
 </script>
 <style>
-:root{--bg:#06172a;--brand:#135a85;--sky:#5e99be;--ink:#f4f7fa;--muted:#a3b8c9;--line:rgba(255,255,255,.14)}
+:root{--bg:#06172a;--bg2:#0a2238;--brand:#135a85;--sky:#5e99be;--ink:#f4f7fa;--muted:#a3b8c9;--line:rgba(255,255,255,.14);--pad:clamp(20px,4vw,56px)}
 *{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:'Manrope',system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.hero{position:relative;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto auto;isolation:isolate;
-  background:radial-gradient(900px 620px at 80% 42%,rgba(19,90,133,.60),transparent 66%),radial-gradient(700px 480px at -5% 105%,rgba(94,153,190,.14),transparent 60%),var(--bg)}
-.hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;
-  background-image:linear-gradient(var(--line) 1px,transparent 1px);background-size:100% 120px;mask-image:linear-gradient(90deg,transparent,#000 70%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 70%);opacity:.18}
-/* nav */
-.nav{display:flex;align-items:center;justify-content:space-between;padding:20px clamp(20px,4vw,56px)}
-.logo img{display:block;height:54px;width:auto}
-.lang{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);backdrop-filter:blur(6px)}
-.lang button{all:unset;cursor:pointer;font-size:.74rem;font-weight:700;letter-spacing:.12em;padding:7px 13px;border-radius:999px;color:var(--muted);transition:background .25s,color .25s}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.lang button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
-/* main */
-.main{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,88px);align-items:center;padding:8px clamp(20px,4vw,56px) 24px}
-.eyebrow{display:flex;align-items:center;gap:14px;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);margin-bottom:22px}
+a{color:inherit}
+img{display:block;max-width:100%}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);margin-bottom:20px}
 .eyebrow::before{content:"";width:34px;height:1px;background:var(--sky);flex:none}
-h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(2.5rem,4.9vw,4.7rem);line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
-h1 em{font-style:italic;color:var(--sky);font-weight:500}
-.sub{margin-top:22px;max-width:46ch;font-size:clamp(1rem,1.25vw,1.12rem);line-height:1.6;color:var(--muted)}
-.cta{--g:var(--ink);display:inline-flex;align-items:center;gap:14px;margin-top:32px;padding:17px 26px 17px 28px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:700;font-size:1rem;text-decoration:none;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,background .25s;box-shadow:0 10px 30px -10px rgba(94,153,190,.55)}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--sky)}
+.cta{display:inline-flex;align-items:center;gap:14px;padding:17px 26px 17px 28px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:700;font-size:1rem;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s;box-shadow:0 10px 30px -10px rgba(94,153,190,.55)}
 .cta svg{width:20px;height:20px;transition:transform .25s}
 .cta:hover{transform:translateY(-2px);background:#fff;box-shadow:0 18px 40px -12px rgba(94,153,190,.8)}
 .cta:hover svg{transform:translateX(4px)}
 .cta:active{transform:scale(.985)}
-.cta:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
-.contact{margin-top:18px;font-size:.84rem;color:var(--muted);letter-spacing:.02em}
-/* photo */
-.photo{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.1);transform-style:preserve-3d;will-change:transform;background:#fff}
-.photo img{display:block;width:100%;height:auto}
-.photo::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 50%,transparent 60%);transform:translateX(-120%);animation:sheen 1.6s 1.3s ease forwards}
-/* ticker */
+.cta:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+/* reveal */
+.js .rv2{opacity:0;transform:translateY(26px);filter:blur(6px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s;transition-delay:var(--d,0s)}
+.js .rv2.in{opacity:1;transform:none;filter:none}
+/* HERO */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-rows:1fr auto;isolation:isolate;background:var(--bg);overflow:hidden}
+.slides{position:absolute;inset:0;z-index:-2}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);animation:fade 21s infinite,kb 21s infinite}
+.slides img:nth-child(1){animation-delay:-1.2s}.slides img:nth-child(2){animation-delay:5.8s}.slides img:nth-child(3){animation-delay:12.8s}
+.slides img:nth-child(1){object-position:70% 50%}.slides img:nth-child(2){object-position:75% 50%}.slides img:nth-child(3){object-position:30% 50%}
+@keyframes fade{0%{opacity:0}6%{opacity:1}33%{opacity:1}39%{opacity:0}100%{opacity:0}}
+@keyframes kb{0%{transform:scale(1.1)}40%{transform:scale(1)}100%{transform:scale(1)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(6,23,42,.94) 0%,rgba(6,23,42,.78) 38%,rgba(6,23,42,.25) 72%,rgba(6,23,42,.1) 100%),linear-gradient(180deg,rgba(6,23,42,.7) 0,transparent 22%,transparent 60%,rgba(6,23,42,.95) 100%)}
+.nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px var(--pad)}
+.logo img{height:68px;width:auto}
+.links{display:flex;gap:30px;margin-left:auto;margin-right:12px}
+.links a{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink);opacity:.82;transition:opacity .2s,color .2s}
+.links a:hover{opacity:1;color:var(--sky)}
+.lang{display:flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:999px;background:rgba(6,23,42,.45);backdrop-filter:blur(8px)}
+.lang button{all:unset;cursor:pointer;font-size:.74rem;font-weight:700;letter-spacing:.12em;padding:7px 13px;border-radius:999px;color:var(--muted);transition:background .25s,color .25s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.lang button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.hero-copy{align-self:center;padding:130px var(--pad) 40px;max-width:900px}
+.hero h1{font-size:clamp(2.7rem,6.2vw,6rem);line-height:.98}
+.hero .sub{margin-top:24px;max-width:48ch;font-size:clamp(1rem,1.3vw,1.18rem);line-height:1.6;color:#c4d3df}
+.hero .actions{margin-top:34px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+.hero .more{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--sky);padding-bottom:4px}
+.contact-line{margin-top:20px;font-size:.84rem;color:var(--muted)}
 .ticker{overflow:hidden;border-top:1px solid var(--line);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .track{display:flex;width:max-content;animation:mq 42s linear infinite}
 .track span{display:flex;align-items:center;gap:28px;padding:18px 14px 18px 28px;font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 .track span::after{content:"";width:5px;height:5px;transform:rotate(45deg);background:var(--sky)}
-.demo{padding:0 20px 12px;text-align:center;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(163,184,201,.55)}
-/* motion */
-.rv{opacity:0;transform:translateY(20px);filter:blur(6px);animation:in .95s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
-.photo{clip-path:inset(0 0 0 100%);animation:wipe 1.3s .25s cubic-bezier(.7,0,.2,1) forwards}
-.photo img{transform:scale(1.07);animation:settle 2.2s .25s cubic-bezier(.2,.7,.2,1) forwards}
-@keyframes in{to{opacity:1;transform:none;filter:none}}
-@keyframes wipe{to{clip-path:inset(0 0 0 0)}}
-@keyframes settle{to{transform:scale(1)}}
-@keyframes sheen{to{transform:translateX(120%)}}
 @keyframes mq{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.rv,.photo,.photo img{animation:none;opacity:1;transform:none;filter:none;clip-path:none}.photo::after{display:none}.track{animation:none}}
-/* mobile */
+.js .hero-copy>*{opacity:0;transform:translateY(22px);filter:blur(6px);animation:in .95s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
+@keyframes in{to{opacity:1;transform:none;filter:none}}
+/* DEVELOPMENTS */
+.dev{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:90px 0 60px;background:linear-gradient(180deg,var(--bg),var(--bg2) 55%,var(--bg))}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;padding:0 var(--pad);margin-bottom:38px}
+.sec-head h2{font-size:clamp(2.2rem,4.4vw,4rem);line-height:1}
+.sec-head .lnk{font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--sky);border-bottom:1px solid var(--sky);padding-bottom:4px;white-space:nowrap}
+.dev-view{overflow:hidden}
+.dev-track{display:flex;gap:22px;padding:0 var(--pad);width:max-content}
+.card{position:relative;display:block;flex:none;width:clamp(260px,26vw,380px);aspect-ratio:3/4;border-radius:18px;overflow:hidden;text-decoration:none;background:#0d2a44;box-shadow:0 30px 60px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(6,23,42,.92) 100%)}
+.card:hover img{transform:scale(1.07)}
+.card .meta{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}
+.card .num{display:block;font-size:.68rem;font-weight:700;letter-spacing:.22em;color:var(--sky);margin-bottom:8px}
+.card h3{font-size:1.75rem;line-height:1.05}
+.card .go{display:inline-block;margin-top:12px;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+.card:hover .go,.card:focus-visible .go{opacity:1;transform:none}
+.progress{margin:34px var(--pad) 0;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--sky);transform:scaleX(0);transform-origin:left}
+/* AREAS */
+.areas{padding:110px var(--pad);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,100px);align-items:start}
+.areas>div:first-child{position:sticky;top:110px}
+.areas h2{font-size:clamp(2.2rem,4.4vw,4rem);line-height:1}
+.areas p.lead{margin-top:20px;max-width:34ch;color:var(--muted);line-height:1.6}
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:10px;padding:22px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .35s,background .35s,color .25s}
+.row .n{font-size:.7rem;font-weight:700;letter-spacing:.2em;color:var(--sky)}
+.row .t{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.7rem,2.6vw,2.4rem);line-height:1}
+.row .a{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);transition:color .25s,transform .25s}
+.row:hover{padding-left:20px;background:rgba(94,153,190,.08)}
+.row:hover .a{color:var(--sky);transform:translateX(4px)}
+/* ABOUT */
+.about{padding:110px var(--pad);background:linear-gradient(180deg,var(--bg),var(--bg2));display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(30px,6vw,100px);align-items:center}
+.portrait{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.1)}
+.portrait img{width:100%;height:auto}
+.about h2{font-size:clamp(2.4rem,4.8vw,4.4rem);line-height:1}
+.about p.bio{margin-top:20px;max-width:52ch;color:#c4d3df;line-height:1.7;font-size:1.05rem}
+.facts{margin-top:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fact{padding:18px 0;border-top:1px solid var(--line)}
+.fact b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500;line-height:1.1;margin-bottom:6px}
+.fact span{font-size:.82rem;color:var(--muted);line-height:1.45}
+.rev-label{margin-top:40px;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sky)}
+.revs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{padding:22px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.rev q{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.35rem;line-height:1.2;quotes:"\201C" "\201D"}
+.rev cite{display:block;margin-top:14px;font-size:.78rem;font-style:normal;color:var(--muted);letter-spacing:.04em}
+.rev-note{margin-top:12px;font-size:.72rem;color:rgba(163,184,201,.7)}
+/* CONTACT */
+.contact{position:relative;padding:130px var(--pad) 90px;text-align:center;background:radial-gradient(800px 500px at 50% 0%,rgba(19,90,133,.55),transparent 70%),var(--bg);border-top:1px solid var(--line)}
+.contact h2{font-size:clamp(2.6rem,6vw,5.6rem);line-height:.98;max-width:14ch;margin:0 auto}
+.contact p.s{margin:22px auto 0;max-width:42ch;color:var(--muted);line-height:1.6}
+.contact .cta{margin-top:34px}
+.ways{margin-top:34px;display:flex;justify-content:center;gap:34px;flex-wrap:wrap;font-size:.95rem;color:var(--ink)}
+.ways a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px}
+.ways a:hover{border-color:var(--sky);color:var(--sky)}
+.social{margin-top:28px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.social a{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:10px 16px;border:1px solid var(--line);border-radius:999px;color:var(--muted);transition:color .2s,border-color .2s,background .2s}
+.social a:hover{color:var(--ink);border-color:var(--sky);background:rgba(94,153,190,.1)}
+footer{padding:26px var(--pad) 90px;text-align:center;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(163,184,201,.6);border-top:1px solid var(--line);line-height:1.9}
+/* floating CTA */
+.fab{position:fixed;right:20px;bottom:20px;z-index:20;display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 14px 34px -10px rgba(0,0,0,.7);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .35s,transform .35s}
+.fab.on{opacity:1;transform:none;pointer-events:auto}
+.fab svg{width:18px;height:18px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv2,.js .hero-copy>*{opacity:1;transform:none;filter:none;animation:none;transition:none}.slides img{animation:none}.slides img:nth-child(1){opacity:1;transform:none}.track{animation:none}}
 @media (max-width:899px){
-  .nav{padding:16px 20px}.logo img{height:46px}
-  .main{grid-template-columns:1fr;gap:26px;align-content:center;padding:4px 20px 22px}
-  .eyebrow{font-size:.64rem;letter-spacing:.16em;margin-bottom:16px}
-  h1{font-size:clamp(2.2rem,10.2vw,3rem)}
-  .sub{margin-top:14px;font-size:.96rem;line-height:1.5}
-  .cta{width:100%;justify-content:center;margin-top:22px;padding:16px 22px}
-  .contact{text-align:center;margin-top:14px}
-  .photo{border-radius:16px}
+  .nav{padding:14px 20px}.logo img{height:52px}.links{display:none}
+  .hero-copy{padding:104px 20px 28px}
+  .hero h1{font-size:clamp(2.6rem,12.5vw,3.6rem)}
+  .hero .sub{font-size:.98rem;margin-top:18px}
+  .hero .actions{margin-top:26px;gap:18px}
+  .hero .cta{width:100%;justify-content:center}
+  .hero .more{display:none}
+  .hero::before{background:linear-gradient(180deg,rgba(6,23,42,.78) 0,rgba(6,23,42,.55) 35%,rgba(6,23,42,.92) 78%,rgba(6,23,42,1) 100%)}
   .track span{padding:14px 10px 14px 22px;font-size:.62rem}
+  .dev{min-height:0;padding:80px 0 60px}
+  .dev-view{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .dev-view::-webkit-scrollbar{display:none}
+  .card{scroll-snap-align:center;width:min(78vw,340px)}
+  .progress{display:none}
+  .areas,.about{grid-template-columns:1fr;padding:80px 20px}
+  .areas>div:first-child{position:static}
+  .eyebrow{font-size:.6rem;letter-spacing:.12em;gap:10px}.eyebrow::before{width:22px}
+  .row{grid-template-columns:40px 1fr auto;padding:18px 4px}
+  .row .a{display:none}
+  .facts,.revs{grid-template-columns:1fr}
+  .portrait{max-width:380px}
+  .contact{padding:90px 20px 60px}
+  .contact .cta{width:100%;justify-content:center}
 }
-@media (max-height:720px) and (min-width:900px){h1{font-size:clamp(2.2rem,4.2vw,3.8rem)}.sub{margin-top:16px}.cta{margin-top:24px}}
 </style>
 </head>
 <body>
-<header class="hero">
+
+<header class="hero" id="top">
+  <div class="slides" aria-hidden="true">
+    <img src="assets/hero-waldorf.webp" alt="" fetchpriority="high">
+    <img src="assets/hero-sunny.webp" alt="" loading="lazy">
+    <img src="assets/hero-brickell.webp" alt="" loading="lazy">
+  </div>
   <nav class="nav">
-    <a class="logo rv" href="#" aria-label="Guillermo Teran · Broker Associate · Avanti Way"><img src="assets/logo.webp" width="1920" height="675" alt="Guillermo Teran, Broker Associate, Avanti Way"></a>
-    <div class="lang rv" style="--d:.1s" role="group" aria-label="Language">
+    <a class="logo" href="#top" aria-label="Guillermo Teran · Broker Associate · Avanti Way"><img src="assets/logo.webp" width="1906" height="651" alt="Guillermo Teran, Broker Associate, Avanti Way"></a>
+    <div class="links">
+      <a href="#developments" data-i18n="nav_dev">Developments</a>
+      <a href="#areas" data-i18n="nav_areas">Areas</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
       <button type="button" data-lang="en" aria-pressed="true">EN</button>
       <button type="button" data-lang="es" aria-pressed="false">ES</button>
     </div>
   </nav>
-
-  <div class="main">
-    <div class="copy">
-      <p class="eyebrow rv" style="--d:.15s" data-i18n="eyebrow">Broker Associate · Avanti Way Realty</p>
-      <h1 class="rv" style="--d:.28s" data-i18n-html="h1">Find your place in Miami’s newest <em>developments</em>.</h1>
-      <p class="sub rv" style="--d:.42s" data-i18n="sub">Pre-construction and new developments across Brickell, Edgewater, Coral Gables, Doral and beyond. Over 30 years in South Florida real estate.</p>
-      <div class="rv" style="--d:.56s">
-        <a class="cta" id="cta" href="#" target="_blank" rel="noopener"><span data-i18n="cta">Message me on WhatsApp</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <p class="contact">(305) 457-9609 · gteran@avantiway.com</p>
-      </div>
+  <div class="hero-copy">
+    <p class="eyebrow" style="--d:.15s" data-i18n="eyebrow">Broker Associate · Avanti Way Realty</p>
+    <h1 style="--d:.28s" data-i18n-html="h1">Find your place in Miami’s newest <em>developments</em>.</h1>
+    <p class="sub" style="--d:.42s" data-i18n="sub">Pre-construction and new developments across Brickell, Edgewater, Coral Gables, Doral and beyond. Over 30 years in South Florida real estate.</p>
+    <div class="actions" style="--d:.56s">
+      <a class="cta wa" target="_blank" rel="noopener" href="#"><span data-i18n="cta">Message me on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="more" href="#developments" data-i18n="see_dev">See new developments</a>
     </div>
-    <figure class="photo" id="photo">
-      <img src="assets/cover.webp" width="1920" height="1013" alt="Guillermo Teran in a new-development residence overlooking the water in Miami" fetchpriority="high">
-    </figure>
+    <p class="contact-line" style="--d:.7s">(305) 457-9609 · gteran@avantiway.com</p>
   </div>
-
   <div class="ticker" aria-label="Areas served">
     <div class="track" aria-hidden="true">
       <span>Brickell</span><span>Edgewater</span><span>Coral Gables</span><span>Biscayne Park</span><span>Doral</span><span>Downtown Miami</span><span>El Portal</span><span>Pinecrest</span>
       <span>Brickell</span><span>Edgewater</span><span>Coral Gables</span><span>Biscayne Park</span><span>Doral</span><span>Downtown Miami</span><span>El Portal</span><span>Pinecrest</span>
     </div>
   </div>
-  <p class="demo">Concept demo by Vortexia</p>
 </header>
 
+<section class="dev" id="developments">
+  <div class="sec-head rv2">
+    <div>
+      <p class="eyebrow" data-i18n="dev_eyebrow">New developments</p>
+      <h2 data-i18n-html="dev_h2">Pre-construction, <em>curated</em>.</h2>
+    </div>
+    <a class="lnk" href="https://www.gteran.com/new-developments" target="_blank" rel="noopener" data-i18n="dev_all">See all on gteran.com</a>
+  </div>
+  <div class="dev-view">
+    <div class="dev-track">
+      <a class="card" href="https://www.gteran.com/new-development/waldorf-astoria" target="_blank" rel="noopener"><img src="assets/dev-waldorf.webp" alt="Waldorf Astoria" loading="lazy" style="object-position:72% 50%"><span class="meta"><span class="num">01</span><h3>Waldorf Astoria</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/st-regis-sunny-isles" target="_blank" rel="noopener"><img src="assets/dev-sunny.webp" alt="St Regis Sunny Isles" loading="lazy" style="object-position:85% 50%"><span class="meta"><span class="num">02</span><h3>St Regis Sunny Isles</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/st-regis-brickell" target="_blank" rel="noopener"><img src="assets/dev-brickell.webp" alt="St Regis Brickell" loading="lazy" style="object-position:22% 50%"><span class="meta"><span class="num">03</span><h3>St Regis Brickell</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/bentley-residences" target="_blank" rel="noopener"><img src="assets/dev-bentley.webp" alt="Bentley Residences" loading="lazy" style="object-position:55% 50%"><span class="meta"><span class="num">04</span><h3>Bentley Residences</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/elle-residences" target="_blank" rel="noopener"><img src="assets/dev-elle.webp" alt="ELLE Residences" loading="lazy" style="object-position:40% 50%"><span class="meta"><span class="num">05</span><h3>ELLE Residences</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/aston-martin" target="_blank" rel="noopener"><img src="assets/dev-aston.webp" alt="Aston Martin" loading="lazy" style="object-position:50% 50%"><span class="meta"><span class="num">06</span><h3>Aston Martin</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/the-elser" target="_blank" rel="noopener"><img src="assets/dev-elser.webp" alt="The Elser" loading="lazy" style="object-position:78% 50%"><span class="meta"><span class="num">07</span><h3>The Elser</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/e11even-residences-beyond" target="_blank" rel="noopener"><img src="assets/dev-e11even.webp" alt="E11EVEN Club Residences" loading="lazy" style="object-position:60% 50%"><span class="meta"><span class="num">08</span><h3>E11EVEN Club Residences</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/shoma-bay" target="_blank" rel="noopener"><img src="assets/dev-shoma.webp" alt="Shoma Bay" loading="lazy" style="object-position:70% 50%"><span class="meta"><span class="num">09</span><h3>Shoma Bay</h3><span class="go" data-i18n="view">View project →</span></span></a>
+      <a class="card" href="https://www.gteran.com/new-development/vida-residences" target="_blank" rel="noopener"><img src="assets/dev-vida.webp" alt="VIDA Residences" loading="lazy" style="object-position:50% 50%"><span class="meta"><span class="num">10</span><h3>VIDA Residences</h3><span class="go" data-i18n="view">View project →</span></span></a>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="rv2">
+    <p class="eyebrow" data-i18n="areas_eyebrow">Miami areas</p>
+    <h2 data-i18n-html="areas_h2">Find your <em>neighborhood</em>.</h2>
+    <p class="lead" data-i18n="areas_p">Browse active listings in each area.</p>
+  </div>
+  <div class="rows rv2" style="--d:.1s">
+    <a class="row" href="https://www.gteran.com/for-sale/brickell" target="_blank" rel="noopener"><span class="n">01</span><span class="t">Brickell</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/edgewater" target="_blank" rel="noopener"><span class="n">02</span><span class="t">Edgewater</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/coral-gables" target="_blank" rel="noopener"><span class="n">03</span><span class="t">Coral Gables</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/biscayne-park" target="_blank" rel="noopener"><span class="n">04</span><span class="t">Biscayne Park</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/doral" target="_blank" rel="noopener"><span class="n">05</span><span class="t">Doral</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/downtown-miami" target="_blank" rel="noopener"><span class="n">06</span><span class="t">Downtown Miami</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/el-portal" target="_blank" rel="noopener"><span class="n">07</span><span class="t">El Portal</span><span class="a" data-i18n="explore">Explore area</span></a>
+    <a class="row" href="https://www.gteran.com/for-sale/pinecrest" target="_blank" rel="noopener"><span class="n">08</span><span class="t">Pinecrest</span><span class="a" data-i18n="explore">Explore area</span></a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="portrait rv2"><img src="assets/guillermo.webp" width="1000" height="1250" alt="Guillermo Teran, Broker Associate at Avanti Way Realty" loading="lazy"></div>
+  <div class="rv2" style="--d:.1s">
+    <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+    <h2>Guillermo <em>Teran</em></h2>
+    <p class="bio" data-i18n="about_bio">Broker Associate at Avanti Way Realty. He markets and sells residential and commercial real estate across the tri-county region.</p>
+    <div class="facts">
+      <div class="fact"><b data-i18n="f1b">Luxury certified</b><span data-i18n="f1s">Institute for Luxury Home Marketing</span></div>
+      <div class="fact"><b data-i18n="f2b">Top listing agent 2021</b><span data-i18n="f2s">at Avanti Way</span></div>
+      <div class="fact"><b data-i18n="f3b">30+ years</b><span data-i18n="f3s">in South Florida real estate</span></div>
+    </div>
+    <p class="rev-label" data-i18n="rev_label">What clients say</p>
+    <div class="revs">
+      <div class="rev"><q>Excellent realtor, very professional</q><cite>Gabriel Solorzano</cite></div>
+      <div class="rev"><q>The most professional Real Estate Agent</q><cite>Juan Schutze</cite></div>
+      <div class="rev"><q>An honest &amp; hard working individual</q><cite>Ivan Bendaña</cite></div>
+    </div>
+    <p class="rev-note" data-i18n="rev_note">Excerpts from client reviews on gteran.com.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="rv2">
+    <h2 data-i18n-html="c_h2">Let’s talk about your <em>next move</em>.</h2>
+    <p class="s" data-i18n="c_p">Tell me what you’re looking for.</p>
+    <a class="cta wa" target="_blank" rel="noopener" href="#"><span data-i18n="cta">Message me on WhatsApp</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="ways"><a href="tel:+13054579609">(305) 457-9609</a><a href="mailto:gteran@avantiway.com">gteran@avantiway.com</a></div>
+    <div class="social">
+      <a href="https://www.instagram.com/gteran69/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/gteran69" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/channel/UC2_wkRWmINgvwgmzVqjTgQg" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/guillermo-teran-9484979b/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>Equal Housing Opportunity · Avanti Way Realty</div>
+  <div>Concept demo by Vortexia</div>
+</footer>
+
+<a class="fab wa" id="fab" target="_blank" rel="noopener" href="#"><span data-i18n="fab">Message me</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
 (function(){
   var T={
-    en:{eyebrow:"Broker Associate · Avanti Way Realty",
+    en:{nav_dev:"Developments",nav_areas:"Areas",nav_about:"About",nav_contact:"Contact",
+      eyebrow:"Broker Associate · Avanti Way Realty",
       h1:"Find your place in Miami’s newest <em>developments</em>.",
       sub:"Pre-construction and new developments across Brickell, Edgewater, Coral Gables, Doral and beyond. Over 30 years in South Florida real estate.",
-      cta:"Message me on WhatsApp",
+      cta:"Message me on WhatsApp",see_dev:"See new developments",
+      dev_eyebrow:"New developments",dev_h2:"Pre-construction, <em>curated</em>.",dev_all:"See all on gteran.com",view:"View project →",
+      areas_eyebrow:"Miami areas",areas_h2:"Find your <em>neighborhood</em>.",areas_p:"Browse active listings in each area.",explore:"Explore area",
+      about_eyebrow:"About",about_bio:"Broker Associate at Avanti Way Realty. He markets and sells residential and commercial real estate across the tri-county region.",
+      f1b:"Luxury certified",f1s:"Institute for Luxury Home Marketing",f2b:"Top listing agent 2021",f2s:"at Avanti Way",f3b:"30+ years",f3s:"in South Florida real estate",
+      rev_label:"What clients say",rev_note:"Excerpts from client reviews on gteran.com.",
+      c_h2:"Let’s talk about your <em>next move</em>.",c_p:"Tell me what you’re looking for.",fab:"Message me",
       wa:"Hi Guillermo, I saw your website. I’d like to learn about new developments in Miami."},
-    es:{eyebrow:"Broker Associate · Avanti Way Realty",
+    es:{nav_dev:"Desarrollos",nav_areas:"Zonas",nav_about:"Sobre mí",nav_contact:"Contacto",
+      eyebrow:"Broker Associate · Avanti Way Realty",
       h1:"Encuentra tu lugar en los desarrollos más nuevos de <em>Miami</em>.",
       sub:"Preconstrucción y nuevos desarrollos en Brickell, Edgewater, Coral Gables, Doral y más. Más de 30 años en bienes raíces del sur de Florida.",
-      cta:"Escríbeme por WhatsApp",
+      cta:"Escríbeme por WhatsApp",see_dev:"Ver nuevos desarrollos",
+      dev_eyebrow:"Nuevos desarrollos",dev_h2:"Preconstrucción, <em>bien elegida</em>.",dev_all:"Ver todos en gteran.com",view:"Ver proyecto →",
+      areas_eyebrow:"Zonas de Miami",areas_h2:"Encuentra tu <em>barrio</em>.",areas_p:"Explora las propiedades activas en cada zona.",explore:"Explorar zona",
+      about_eyebrow:"Sobre mí",about_bio:"Broker Associate en Avanti Way Realty. Comercializa y vende bienes raíces residenciales y comerciales en la región de los tres condados.",
+      f1b:"Certificado en lujo",f1s:"Institute for Luxury Home Marketing",f2b:"Mejor agente listador 2021",f2s:"en Avanti Way",f3b:"Más de 30 años",f3s:"en bienes raíces del sur de Florida",
+      rev_label:"Lo que dicen sus clientes",rev_note:"Extractos de reseñas de clientes en gteran.com (en inglés).",
+      c_h2:"Hablemos de tu <em>próximo paso</em>.",c_p:"Cuéntame qué estás buscando.",fab:"Escríbeme",
       wa:"Hola Guillermo, vi tu página. Me gustaría conocer los nuevos desarrollos en Miami."}
   };
-  var cta=document.getElementById('cta');
   function setLang(l){
-    var d=T[l];
-    document.documentElement.lang=l;
+    var d=T[l];document.documentElement.lang=l;
     document.querySelectorAll('[data-i18n]').forEach(function(n){n.textContent=d[n.getAttribute('data-i18n')]});
     document.querySelectorAll('[data-i18n-html]').forEach(function(n){n.innerHTML=d[n.getAttribute('data-i18n-html')]});
-    cta.href='https://api.whatsapp.com/send?phone=13054579609&text='+encodeURIComponent(d.wa);
+    var href='https://api.whatsapp.com/send?phone=13054579609&text='+encodeURIComponent(d.wa);
+    document.querySelectorAll('a.wa').forEach(function(a){a.href=href});
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===l))});
     try{localStorage.setItem('lang',l)}catch(e){}
   }
@@ -142,14 +325,30 @@ h1 em{font-style:italic;color:var(--sky);font-weight:500}
   try{var s=localStorage.getItem('lang');if(s&&T[s])start=s;else if((navigator.language||'').toLowerCase().indexOf('es')===0)start='es'}catch(e){}
   setLang(start);
 
-  /* subtle tilt on desktop */
-  var p=document.getElementById('photo');
-  var fine=window.matchMedia('(pointer:fine)').matches,calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  if(fine&&!calm){
-    var tx=0,ty=0,cx=0,cy=0,raf=null;
-    function tick(){cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;p.style.transform='perspective(1400px) rotateY('+cx.toFixed(2)+'deg) rotateX('+cy.toFixed(2)+'deg)';
-      if(Math.abs(tx-cx)>.01||Math.abs(ty-cy)>.01)raf=requestAnimationFrame(tick);else raf=null}
-    window.addEventListener('pointermove',function(e){tx=((e.clientX/innerWidth)-.5)*5;ty=-((e.clientY/innerHeight)-.5)*4;if(!raf)raf=requestAnimationFrame(tick)});
+  var calm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  /* reveals */
+  var els=document.querySelectorAll('.rv2');
+  if('IntersectionObserver' in window&&!calm){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
+
+  /* floating CTA after the hero */
+  var fab=document.getElementById('fab'),hero=document.getElementById('top'),contact=document.getElementById('contact');
+  var heroOut=false,contactIn=false;
+  function upd(){fab.classList.toggle('on',heroOut&&!contactIn)}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){heroOut=!e[0].isIntersecting;upd()},{threshold:.15}).observe(hero);
+    new IntersectionObserver(function(e){contactIn=e[0].isIntersecting;upd()},{threshold:.3}).observe(contact);
+  }
+
+  /* pinned horizontal gallery on desktop */
+  var mq=window.matchMedia('(min-width:900px)');
+  if(window.gsap&&window.ScrollTrigger&&mq.matches&&!calm){
+    gsap.registerPlugin(ScrollTrigger);
+    var track=document.querySelector('.dev-track'),view=document.querySelector('.dev-view'),bar=document.getElementById('bar');
+    var dist=function(){return Math.max(0,track.scrollWidth-view.clientWidth)};
+    gsap.to(track,{x:function(){return -dist()},ease:'none',scrollTrigger:{trigger:'#developments',start:'top top',end:function(){return '+='+dist()},pin:true,scrub:.6,invalidateOnRefresh:true,onUpdate:function(s){bar.style.transform='scaleX('+s.progress+')'}}});
   }
 })();
 </script>
